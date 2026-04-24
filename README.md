@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 安装内容
+
+1. yarn add -D @craco/craco
+2. yarn add -D craco-less
+3. npm install --save normalize.css
+4. npm i react-router-dom
+5. yarn add @reduxjs/toolkit [推荐方式,未来的趋势]
+6. yarn add react-redux [普通方式,目前项目中依然使用率非常高]
+7. yarn add axios
+
+## 问题解决
+
+1. @ => src 别名,webpack处理,react cra脚手架自动隐藏webpack
+   1. 方式1:npm run eject
+   2. 方式2:craco => Create React App Configuration Override, an easy and comprehensible configuration layer for create-react-app. [craco.config.js]

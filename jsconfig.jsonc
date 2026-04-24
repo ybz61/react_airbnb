@@ -1,0 +1,32 @@
+{
+  // VS Code 用于 React 项目的 JS 配置文件（支持注释）
+  "compilerOptions": {
+    // 编译后目标 JS 版本：es5 兼容所有浏览器
+    "target": "es5",
+    // 使用最新的 ES 模块化方案
+    "module": "esnext",
+    // 基础路径：项目根目录（配合 paths 使用）
+    "baseUrl": "./",
+    // 模块解析策略：采用 Node.js 风格
+    "moduleResolution": "node",
+    // 路径别名：@ 符号 映射到项目 src 目录（告别 ../../ 写法）
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    // React 17+ 新 JSX 转换（无需手动 import React）
+    "jsx": "react-jsx",
+    // "jsx": "preserve",
+    // 项目依赖的类型库：支持最新 ES、浏览器 DOM、可迭代对象等
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    // 允许编译器处理 JS 文件
+    "allowJs": true,
+    // 兼容 ES 模块与 CommonJS 模块（解决导入报错）
+    "esModuleInterop": true,
+    // 允许直接导入 .json 格式文件
+    "resolveJsonModule": true
+  },
+  // 排除不需要解析的目录（提升 VS Code 性能，避免卡顿）
+  "exclude": ["node_modules", "build", "dist"],
+  // 指定需要解析的源码目录（只扫描 src 下的所有文件）
+  "include": ["src/**/*"]
+}
